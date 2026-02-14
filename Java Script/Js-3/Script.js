@@ -1,4 +1,4 @@
-let ism = prompt("Ismingizni kiriting:");
+var ism = prompt("Ismingizni kiriting:");
 
 if (ism === null) {
     alert("Ism kiriting");
@@ -6,8 +6,8 @@ if (ism === null) {
     if (ism.trim().length < 3) {
         alert("Ism juda qisqa");
     } else {
-        let matn = prompt("Nimaga universitet kirishni xohlaysiz");
-        let natija = matn.replaceAll("universitet", "alicode");
+        var matn = prompt("Nimaga universitet kirishni xohlaysiz");
+        var natija = matn.replaceAll("universitet", "alicode");
 
         alert("Natija " + natija);
     }
