@@ -1,13 +1,32 @@
-var matn = prompt("Matn kiriting").trim();
+var number = +prompt("Son kiriting").trim()
 
-var xarf = prompt("xarf kiriting");
+var b = prompt("amalni kiriting(+,-,/,*)").trim()
 
-var xisobchi = 0;
+var number = +prompt("Son kiriting").trim()
 
-for (var i = 0; i < matn.length; i++) {
-    if (matn[i] === xarf) {
-        xisobchi++;
-    }
+
+switch (b) {
+    case  "+":
+   console.log(a+b);
+    break;
+
+
+    case  "-":
+   console.log(a-b);
+    break;
+
+
+    case  "/":
+   console.log(a/b);
+    break;
+
+
+    case  "*":
+   console.log(a*b);
+    break;
+    
+
+    default:
+        console.log("amal notog'ri kiritilgan");
+        
 }
-
-alert( xisobchi );
