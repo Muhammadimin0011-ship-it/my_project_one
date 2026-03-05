@@ -33,6 +33,6 @@ for (var i = 1; i <= oynaSoni; i++ ){
 
 var result = 2 * (a + b);
 
-var result2 = result - (oynaploshadi - eshikploshadi);
+var result2 = result - (oynaploshadi + eshikploshadi);
 
 alert(result2);
