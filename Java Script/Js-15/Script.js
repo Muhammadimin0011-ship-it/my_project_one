@@ -1,8 +1,8 @@
-var metodlar = prompt("Metod nomini yozing: length, toString, at, join, pop, push, shift, unshift").trim();
+var metodlar = prompt("Metod nomini yozing:").trim();
 
 var arr = ["apple", "banana", "orange"];
 
-if (metodar === "length") {
+if (metodlar === "length") {
     console.log(arr.length);
 }
 
