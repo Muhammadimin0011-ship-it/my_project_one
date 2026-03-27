@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+
+.card {
+    width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    height: 300px;
+}
+
+
+.card h2 {
+    text-align: center;
+}
+
+.info {
+    margin: 10px 0;
+}
