@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../masterclass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <input id="name" type="text" placeholder="enter name">
+    <input id="age" type="number" placeholder="enter age">
+    <input id="lastname" type="text" placeholder="enter lastname">
+    <input id="balance" type="number" placeholder="enter balance">
+    <input id="nomer" type="number" placeholder="enter nomer">
+
+    <button onclick="addPersonToArr()">add<i class="fa-solid fa-plus"></i> </button>
+    <br />
+    <br />
+    <button onclick="randomsort()">Random Sort<i class="fa-solid fa-shuffle"></i></button>
+
+    <table>
+        <thead>
+            <tr>
+                <th><button class="b" onclick="sortByName()">Name<i class="fa-solid fa-sort"></i></button></th>
+                <th><button class="b" onclick="sortByAge()">Age<i class="fa-solid fa-sort"></i></button></th>
+                <th><button class="b" onclick="sortByLastname()">Lastname<i class="fa-solid fa-sort"></i></button></th>
+                <th><button class="b" onclick="sortByBalance()">Balance<i class="fa-solid fa-sort"></i></button></th>
+                <th><button class="b" onclick="sortByNomer()">nomer<i class="fa-solid fa-sort"></i></button></th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

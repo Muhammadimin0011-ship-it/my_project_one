@@ -1,0 +1,25 @@
+input {
+    padding: 5px;
+    margin: 3px;
+}
+
+button {
+    padding: 6px 10px;
+    margin: 3px;
+}
+
+table {
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 6px;
+}
+
+
+.b{
+    border: none;
+    outline: none;
+}
