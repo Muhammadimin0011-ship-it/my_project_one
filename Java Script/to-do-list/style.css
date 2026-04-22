@@ -1,0 +1,139 @@
+body {
+  background-color: black;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.box {
+  background-color: rgb(92, 146, 153);
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--input-border-color);
+  box-shadow: 0 20px 40px rgba(0, 255, 195, 0.5);
+  animation: floatBox 2s ease-in-out infinite;
+}
+
+@keyframes floatBox {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.box::before {
+    content: "REJAM";
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+#inputname {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 18px;
+  border: 1px solid;
+  border-radius: 12px;
+  margin-bottom: 20px; 
+  transition: box-shadow 0.3s ease;
+}
+
+#inputname:focus {
+  box-shadow: var(--accent-glow);
+  border-color: #555;
+}
+
+#inputname::placeholder {
+  color: var(--placeholder-color);
+  font-weight: 300;
+}
+
+
+#button {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 18px;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  margin-bottom: 30px; 
+}
+
+#button:hover {
+  background-color: #2a2b2e;
+  border-color: #555;
+  color: whitesmoke ;
+}
+
+
+#result ul {
+  list-style: none; 
+  width: 100%;
+  text-align: left;
+}
+
+
+#result h1 {
+  font-size: 18px;
+  color: var(--text-color);
+  padding: 12px 0;
+  border-bottom: 1px solid #222; 
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#result h1:last-child {
+  border-bottom: none;
+}
+
+
+#result h1::before {
+  content: "•";
+  color: #555; 
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+
+.delete-btn {
+  background-color: transparent;
+  color: #ff4d4d; 
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+  margin-left: 20px;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+}
+
+
+.box {
+  margin-top: -100px; 
+}
